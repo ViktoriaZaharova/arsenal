@@ -274,42 +274,140 @@
 
 <section class="online-calculation dots-bg">
     <div class="container">
-        <h2>Подробный он-лайн расчет</h2>
-        <h5 class="title-description">точность 100%</h5>
+        <h2>Подробный он-лайн расчет
+            <span>точность 100%</span>
+        </h2>
 
         <div class="online-calculation__content">
             <div class="calc-test">
                 <h3>Пройдите тест из 4 вопросов и мы дадим точные цены на СРО с лучшими условиями!</h3>
 
                 <div class="calc-test__body">
-                    <h4>Выберите вид деятельности</h4>
 
-                    <form method="post" class="form form-test">
-                        <label class="checkbox">
-                            <input class="checkbox-inp" type="radio" name="radio">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Строительство</span>
-                        </label>
+                    <div class="calc-test__body-box">
+                        <h4>Выберите вид деятельности</h4>
 
-                        <label class="checkbox">
-                            <input class="checkbox-inp" type="radio" name="radio">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Проектирование</span>
-                        </label>
+                        <form method="post" class="form form-test">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Строительство</span>
+                            </label>
 
-                        <label class="checkbox">
-                            <input class="checkbox-inp" type="radio" name="radio">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Изыскания</span>
-                        </label>
-                    </form>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Проектирование</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Изыскания</span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="calc-test__body-two calc-test__body-box">
+                        <h4>Выберите размер генподряда</h4>
+
+                        <form method="post" class="form form-test">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Строительство до 60 млн.</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Строительство до 500 млн.</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Строительство до 3 млрд</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Строительство свыше 3 млрд</span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="calc-test__body-three calc-test__body-box">
+                        <h4>Проект, Изыск</h4>
+
+                        <form method="post" class="form form-test">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">до 25 млн.</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">до 50 млн.</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">до 300 млн.</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">свыше 300 млн.</span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="calc-test__body-four calc-test__body-box">
+                        <h4>Участие в тендерах по 44 или 223 ФЗ</h4>
+
+                        <form method="post" class="form form-test">
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Да</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="radio" name="radio">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Нет</span>
+                            </label>
+
+                        </form>
+                    </div>
+
+                    <div class="calc-test__body-five calc-test__body-box">
+                        <h4>Регион</h4>
+
+                        <form method="post" class="form form-test">
+                            <label class="select-wrapper">
+                                <select name="city">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Москва">Москва</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
+
                 </div>
 
                 <div class="calc-test__total">
                     <a href="#" class="btn btn-red" download="#">Скачать КП</a>
 
                     <div class="readiness-scale">
-                        <p>Готово: <span class="color-blue">25%</span></p>
+                        <p>Готово: <span class="color-blue">0</span><span class="percent">%</span></p>
 
                         <div class="readiness-scale__line">
                             <div class="bg-line"></div>
@@ -428,13 +526,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="attention">
-            <div class="icon"><img src="img/icons/error.svg" alt=""></div>
-            <p>Важно! Получать допуск СРО на строительство можно параллельно внося сведения в реестр НРС, то есть Вам не
-               придется ждать пока ваших специалистов занесут в реестр НОСТРОЙ. СРО проверит документы, внесет вас в
-               свой реестр (2-3 дня) и вы сможете работать официально.</p>
         </div>
     </div>
 </section>

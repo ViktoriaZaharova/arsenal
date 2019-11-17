@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.gifts-box').click(function () {
-       $('.gifts-box').removeClass('gifts-box__check');
-       $(this).addClass('gifts-box__check');
+        $('.gifts-box').removeClass('gifts-box__check');
+        $(this).addClass('gifts-box__check');
     });
 
     $('.mobile-menu .menu-item__dropdown').click(function () {
@@ -14,5 +14,28 @@ $(document).ready(function() {
 
     $('.btn-close').click(function () {
         $('.mobile-menu').removeClass('open');
+    });
+
+    var activeStep = 1;
+
+
+    $('.calc-test__total .btn-next').click(function (e) {
+        e.preventDefault();
+        $('.calc-test__body-box').hide().eq(activeStep++).show();
+
+        $('.readiness-scale__line .bg-line').css("width", "+=25%");
+
+        $('.readiness-scale').find('.color-blue').text(parseFloat($('.readiness-scale .color-blue').text()) + 25);
+
+        if (activeStep == $('.calc-test__body-box').length) $('.calc-test__total .btn-next').hide();
+
+    });
+
+    $('.calc-test__total .btn-back').click(function (e) {
+        e.preventDefault();
+        $('.calc-test__body-box').hide().eq(activeStep--).show();
+        $('.readiness-scale__line .bg-line').css("width", "-=25%");
+        $('.readiness-scale').find('.color-blue').text(parseFloat($('.readiness-scale .color-blue').text()) - 25);
+
     });
 });
