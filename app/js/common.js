@@ -27,8 +27,6 @@ $(document).ready(function () {
 
         $('.readiness-scale').find('.color-blue').text(parseFloat($('.readiness-scale .color-blue').text()) + 25);
 
-        if (activeStep == $('.calc-test__body-box').length) $('.calc-test__total .btn-next').hide();
-
     });
 
     $('.calc-test__total .btn-back').click(function (e) {
