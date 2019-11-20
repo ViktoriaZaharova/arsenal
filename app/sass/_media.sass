@@ -29,6 +29,12 @@
   .why-entry__content .image
     max-width: 700px
 
+  .cost .main-image
+    max-width: 650px
+
+  .cost
+    .container
+      align-items: flex-end
 
 @media only screen and (max-width : 1410px)
   .form-test .checkbox
@@ -39,6 +45,7 @@
 
   .accreditation-box
     margin: 0 0 30px
+    width: 170px
 
   .our-accreditations__content .text
     max-width: 550px
@@ -94,6 +101,26 @@
       &:before, &:after
         height: 66px
 
+  .reviews-content
+    align-items: stretch
+
+  .reviews-content__text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .image
+      margin: auto 0 0 -137px
+
+
+  .reviews-box
+    margin: 0 5px 26px
+    width: 150px
+    height: 220px
+
+  .reviews-content__wrapper
+    justify-content: space-around
+
+
 
 @media only screen and (max-width : 1340px)
   .main-image
@@ -122,10 +149,12 @@
     height: 66px
 
   .photo-accreditation
-    max-width: 400px
+    max-width: calc(100% - 570px)
+    width: 100%
 
   .accreditation-box
-    width: 180px
+    width: 160px
+    font-size: 14px
 
   .advantages-box
     max-width: 450px
@@ -139,9 +168,6 @@
     width: calc(100% - 70px)
 
   .advantages .container
-    justify-content: space-around
-
-  .reviews-content__wrapper
     justify-content: space-around
 
   .callback-content .image
@@ -228,6 +254,15 @@
       font-size: 46px
       line-height: 50px
 
+  .urgent-receipt__box
+    padding: 28px 10px 0
+
+
+@media only screen and (max-width : 1280px)
+  .accreditation-box
+    display: none
+    &:nth-child(-n+3)
+      display: flex
 
 @media only screen and (max-width : 1230px)
   .our-services__box
@@ -253,6 +288,18 @@
   .privilege__content .image
     margin-top: -100px
 
+  .our-services__box
+    width: 330px
+    min-height: 430px
+
+  .our-services__box-wrapper .image
+    width: 90px
+
+  .our-services__box-wrapper .text
+    width: calc(100% - 90px)
+
+  .our-services__box h3
+    margin: 0 auto 25px
 
 @media only screen and (max-width : 1200px)
   .menu-item
@@ -341,7 +388,9 @@
     flex-direction: column
     align-items: center
     .image
-      display: none
+      margin: auto -105% -26% 0
+      width: 300px
+      order: 1
 
   .list-document
     order: 1
@@ -461,6 +510,9 @@
     .text
       width: calc(100% - 70px)
 
+  .cost .line-wrapper .btn
+    margin: 0 40px 0 0
+
   .join-sro__content .text h6
     font-size: 18px
     margin: 30px 0 0 0
@@ -469,10 +521,15 @@
     margin: 0 0 20px
 
   .sro .main-image
-    max-width: 450px
+    display: none
 
   .sro .main-content
-    max-width: 500px
+    max-width: none
+
+  .sro .line-wrapper
+    justify-content: flex-start
+    .btn
+      margin: 0 40px 0 0
 
   .entry-conditions__content .image-bg
     display: none
@@ -491,15 +548,63 @@
   .why-entry
     padding: 70px 0
 
+  .photo-accreditation
+    max-width: none
+    flex-wrap: wrap
+
+  .our-accreditations__content .text
+    max-width: none
+    order: 1
+    .line-wrapper
+      justify-content: space-around
+
+  .reviews-content__wrapper
+    width: 100%
+    padding: 0
+
+  .reviews-content__text
+    width: 100%
+    margin: 0 0 30px
+    max-width: none
+    .image
+      display: none
+
+  .entry-stages__content .line-arrow
+    margin: -81px 0 55px 31px
+
+  .accreditation-box
+    display: flex
+
+  .cost .main-image
+    display: none
+
+  .cost .main-content
+    max-width: none
+
+  .three-installments__content .introductory-contributions__box
+    .text
+      max-width: 240px
+    .icon
+      width: 50px
+
+  .arsenаl-sro h2
+    max-width: 460px
+
+  .about-main
+    .main-image
+      display: none
+    .main-content
+      max-width: none
+    .line-wrapper
+      justify-content: flex-start
+      .btn
+        margin: 0 40px 0 0
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1080px)
   .three-installments__content .introductory-contributions__box
     margin: 0 0 30px
-    .text
-      max-width: none
-      width: calc(100% - 70px)
 
   .three-installments__content
     margin: 50px 0 0 0
@@ -511,11 +616,17 @@
       width: 70px
 
   .privilege__content .image
-    display: none
+    max-width: 450px
+
+  .privilege__content
+    align-items: flex-end
 
   .privilege__content .why-answer
-    max-width: none
+    max-width: 550px
     justify-content: space-around
+
+  .privilege__content .why-answer .why-answer__box
+    max-width: 48%
 
   .privilege .title-description
     margin: 40px 0
@@ -528,14 +639,29 @@
   .cost .main-content
     max-width: 500px
 
-  .join-sro__content .image
-    display: none
+  .join-sro__content
+    .image
+      width: 300px
+      margin: 0 -140px -222px 0
 
   .join-sro__content .text
     max-width: none
+    width: calc(100% - 200px)
 
   .join-sro__content
     margin: 40px 0 0 0
+
+  .partner-box
+    height: 65px
+    padding: 0 5px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+
+  .partners__content
+    justify-content: space-around
+
 
 @media only screen and (max-width : 992px)
   main
@@ -568,14 +694,7 @@
   .your-gifts
     width: 100%
 
-  .photo-accreditation
-    max-width: none
 
-  .our-accreditations__content .text
-    max-width: none
-    order: 1
-    .line-wrapper
-      justify-content: space-around
 
   .our-accreditations__content .text p
     margin: 0 0 15px
@@ -592,6 +711,9 @@
 
   .our-services__box
     width: 290px
+    min-height: auto
+    .btn
+      margin: 0 auto
 
   .our-services__description
     padding: 0
@@ -599,11 +721,7 @@
     font-size: 14px
 
   .reviews-content__text
-    max-width: 450px
     font-size: 16px
-
-  .reviews-content__wrapper
-    width: calc(100% - 450px)
 
   .callback
     .list-document
@@ -674,7 +792,6 @@
   .why-answer
     justify-content: space-around
     max-width: none
-    margin: 0
 
   .why-answer__box
     margin: 0 0 40px 0
@@ -682,6 +799,16 @@
   .why-entry .title-description
     font-size: 16px
     margin: 40px 0 20px
+
+  .three-installments__content .introductory-contributions__box
+    width: 100%
+    max-width: 30%
+    flex-direction: column
+    align-items: flex-start
+    .text
+      max-width: none
+      width: 100%
+      padding: 20px 0 0 0
 
 
 /* Small Devices, Tablets */
@@ -722,16 +849,6 @@
   .entry-stages__content .line-arrow
     margin: -92px 0 55px 31px
 
-  .reviews-content__wrapper
-    width: 100%
-    padding: 0
-
-  .reviews-content__text
-    width: 100%
-    margin: 0 0 30px
-    max-width: none
-    .image
-      display: none
 
   .reviews-content:before
     display: none
@@ -807,6 +924,13 @@
   .design-benefits__content
     margin: 40px 0
 
+  .our-services__box .btn
+    margin: 0 auto
+
+  .privilege__content .image
+    max-width: 400px
+    margin: -100px -94px 0 -281px
+
 
 @media only screen and (max-width : 830px)
   .footer-box
@@ -820,6 +944,9 @@
     padding: 30px 0
     .container
       justify-content: space-around
+
+  .privilege__content .why-answer
+    max-width: 500px
 
 
 @media only screen and (max-width : 768px)
@@ -845,6 +972,20 @@
 
   .arsenаl-sro .title-description
     margin: 40px 0
+
+  .three-installments__content .introductory-contributions__box
+    flex-direction: row
+    align-items: flex-start
+    max-width: none
+    .text
+      padding: 0 0 0 20px
+      max-width: calc(100% - 50px)
+
+  .privilege__content .why-answer
+    max-width: none
+
+  .privilege__content .image
+    display: none
 
 
 /* Extra Small Devices, Phones */
@@ -912,6 +1053,7 @@
 
   .urgent-receipt__box
     width: 100%
+    padding: 10px 0 0 0
     .icon
       width: 45px
       margin: 0 10px 0 0
@@ -942,6 +1084,17 @@
 
   .link-doc
     margin: 40px 0 0 0
+
+  .accreditation-box
+    width: 120px
+    font-size: 12px
+
+  .join-sro__content .text
+    width: 100%
+
+  .join-sro__content .image
+    margin: 30px 0 -35% auto
+    width: 250px
 
 @media only screen and (max-width : 576px)
   .logo
@@ -1047,6 +1200,9 @@
       padding: 0 0 0 20px
       font-size: 16px
 
+  .privilege__content .why-answer .why-answer__box
+    max-width: none
+
 @media only screen and (max-width : 480px)
   h1
     font-size: 28px
@@ -1080,7 +1236,8 @@
 
   .advantages-box
     flex-direction: column
-    align-items: center
+    align-items: flex-start
+
 
   .advantages-box__text
     width: 100%
@@ -1165,10 +1322,22 @@
   .stages-conditions
     margin: 0 0 40px
 
+  .inspection-bodies__logo
+    width: 100%
+    max-width: 110px
+    height: 60px
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+
+  .additionally-entry .image
+    display: none
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 440px)
+  .accreditation-box
+    width: 47%
 
 
 

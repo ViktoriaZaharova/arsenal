@@ -384,16 +384,12 @@
                     </div>
 
                     <div class="calc-test__body-five calc-test__body-box">
-                        <h4>Регион</h4>
+                        <h4>Получить расчет</h4>
 
                         <form method="post" class="form form-test">
-                            <label class="select-wrapper">
-                                <select name="city">
-                                    <option value="Москва">Москва</option>
-                                    <option value="Москва">Москва</option>
-                                    <option value="Москва">Москва</option>
-                                </select>
-                            </label>
+                            <label><input type="text" placeholder="Введите Ваше имя" name="name"></label>
+                            <label><input type="text" placeholder="Введите Ваш телефон" name="phone" required></label>
+                            <label><input type="text" placeholder="Введите Ваш email" name="mail" required></label>
                         </form>
                     </div>
 
@@ -420,6 +416,8 @@
                     <a href="#" class="btn btn-next btn-blue">
                         <span class="text">Далее</span><span class="icon"><img src="img/icons/arrow.svg" alt=""></span>
                     </a>
+
+                    <button class="btn btn-blue" type="submit">Отправить</button>
                 </div>
             </div>
             <div class="your-gifts">

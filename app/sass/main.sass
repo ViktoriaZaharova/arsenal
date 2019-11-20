@@ -129,8 +129,8 @@ h2
   flex-wrap: wrap
   margin: 0 auto
   width: 100%
-  max-width: 1440px
-  padding: 0 15px
+  max-width: 1450px
+  padding: 0 20px
 
 .list-social
   display: flex
@@ -486,18 +486,18 @@ main
       position: absolute
       top: 50%
       transform: translate(0,-50%)
-      height: 66px
+      height: 68px
 
     &:before
       right: calc(100% + 25px)
       width: 229px
-      background: url("../img/icons/dots.png") no-repeat center
+      background: url("../img/icons/dots.svg") no-repeat center
         size: cover
 
     &:after
       left: calc(100% + 25px)
       width: 961px
-      background: url("../img/icons/dots2.png") no-repeat center
+      background: url("../img/icons/dots2.svg") no-repeat center top
         size: cover
 
 //.online-calculation
@@ -510,7 +510,7 @@ main
       font-family: 'cirlce-l', sans-serif
       display: block
     &:before, &:after
-      height: 130px
+      height: 132px
 
   .title-description
     color: #010000
@@ -542,7 +542,7 @@ main
 
 .calc-test__body
   width: 100%
-  height: 100%
+  //height: 100%
   border:
     top: 1px solid #dddddd
   padding: 30px 51px
@@ -567,6 +567,8 @@ main
   margin: auto 0 0 0
   border:
     top: 1px solid #dddddd
+  button
+    display: none
 
 
 .your-gifts
@@ -701,11 +703,13 @@ main
   align-items: flex-start
   width: 348px
   overflow: hidden
+
   p
     margin: 0 0 14px
     color: #000000
     font-family: 'cirlce-l', sans-serif
     .color-blue, .percent
+      transition: .3s ease
       color: #3580e9
       font-family: 'circle-b', sans-serif
 
@@ -723,6 +727,7 @@ main
     background-color: #3580e9
     height: 3px
     width: 0
+    transition: .5s ease
 
 
 
@@ -793,8 +798,8 @@ main
   width: 100%
   max-width: 900px
   display: flex
-  align-items: flex-start
   flex-wrap: wrap
+  align-items: flex-start
   justify-content: space-between
 
 .accreditation-box
@@ -841,7 +846,7 @@ main
     margin: 0 auto 34px
 
   .btn
-    margin: auto auto 0
+    margin: 43px auto 0
     padding: 5px 52px
 
 .our-services__box-wrapper
@@ -1213,6 +1218,8 @@ form
   align-items: flex-start
   flex-wrap: wrap
   justify-content: space-between
+  position: relative
+  z-index: 1
 
 .reviews-box
   display: flex
@@ -2022,7 +2029,7 @@ footer
   h2
     max-width: 810px
     &:before, &:after
-      height: 130px
+      height: 132px
   .title-description
     margin: 67px 0 73px
     max-width: 930px
@@ -2078,7 +2085,7 @@ footer
   h2
     max-width: 895px
     &:before, &:after
-      height: 130px
+      height: 132px
 
 .additionally-three
   margin: 80px auto 0
@@ -2104,7 +2111,7 @@ footer
   h2
     max-width: 1010px
     &:before, &:after
-      height: 130px
+      height: 132px
   .title-description
     margin: 68px 0 79px
     max-width: 930px
@@ -2212,9 +2219,10 @@ footer
     margin: 0 0 20px
   .header-box__icon
     border-color: #165ec4
-    width: 38px
-    height: 38px
-    padding: 10px
+    width: 32px
+    height: 32px
+    padding: 7px
+    margin: 0 10px 0 0
     svg
       path
         fill: #165ec4
