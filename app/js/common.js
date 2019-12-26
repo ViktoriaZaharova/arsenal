@@ -6,7 +6,8 @@ $(document).ready(function () {
         $(this).addClass('gifts-box__check');
     });
 
-    $('.mobile-menu .menu-item__dropdown').click(function () {
+    $('.mobile-menu .menu-item__dropdown').click(function (e) {
+        e.preventDefault();
         $(this).find('.dropdown-menu').slideToggle();
     });
 
